@@ -2,7 +2,7 @@
 Test task for a Frontend vacancy in Asakabank
 
 
-#Introduction
+# Introduction
 Please create a simple application with the list of pokemons (pokedex). 
 Requirements
 You have to meet the following requirements:
@@ -13,7 +13,7 @@ You have to meet the following requirements:
 5. The application should be deployed online. Heroku, github pages are a few of free alternatives for deployment
 6. The app must be developed with React.js and Redux (feel free to use RTK) in ES6. 
 
-#Evaluation Criterias
+# Evaluation Criterias
 We do not expect to receive a production ready application from you, but it’s important for us to understand whether you have the following skills:
 1. Deliver a minimal viable product in a short period of time
 2. Follow good coding conventions and style guides
@@ -21,7 +21,7 @@ We do not expect to receive a production ready application from you, but it’s 
 4. Ability to properly integrate libraries into the app and use them
 5. ... more stuff depending on your skill level (DRY, architecture skills, etc.)
 
-#Bonuses
+# Bonuses
 Following are not a requirement, but will be a bonus for us:
 1. Use functional components with hooks. For redux prefer hooks usage as well
 2. SASS, Stylus or any UI library (AntD, MaterialUI, etc)
@@ -29,10 +29,10 @@ Following are not a requirement, but will be a bonus for us:
 4. CSS animations
 5. Unit testing
 
-#Pokedex
+# Pokedex
 Using the open pokemon API (http://pokeapi.co/ *) build a pokedex with the following functionality:
 
-#Front End Candidate Requirements:
+# Front End Candidate Requirements:
 1. List pokemons in a table view (or cards) with their name, avatar, type (should visually look as a colored tag) and the main pokemon stats (whichever additional pokemon info you want to show)
 2. When you click on a pokemon in the list, some additional detailed information should be
 shown (for example in a modal dialog).
