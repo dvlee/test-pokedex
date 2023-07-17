@@ -63,18 +63,18 @@ const App: FC<Props> = () => {
   );
 
   useEffect(() => {
-    if (data) {
+    if (data && !isTypedQuery) {
       setTotal(data.count);
       setItems(data.results);
     }
-  }, [data]);
+  }, [data, isTypedQuery]);
 
   useEffect(() => {
-    if (typedPokemonsData) {
+    if (typedPokemonsData && isTypedQuery) {
       setTotal(typedPokemonsData.length);
       setItems(typedPokemonsData.slice((page - 1) * limit, page * limit));
     }
-  }, [typedPokemonsData]);
+  }, [typedPokemonsData, isTypedQuery]);
 
   useEffect(() => {
     const params = new URLSearchParams();
