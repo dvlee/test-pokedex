@@ -24,8 +24,9 @@ const PokemonCard: FC<Props> = ({ item, onClick }) => {
   return (
     <Card
       sx={{
-        display: "flex",
-        justifyContent: "space-between",
+        // display: "flex",
+        // justifyContent: "space-between",
+        position: "relative",
         p: 3,
         height: 248,
         backgroundColor:
@@ -39,7 +40,7 @@ const PokemonCard: FC<Props> = ({ item, onClick }) => {
       }}
       onClick={handleClick}
     >
-      <Stack height={1} gap={1}>
+      <Stack height={1} gap={1} position='relative' zIndex={10}>
         <Typography variant='h6' mb='auto' color='#222'>
           #{id?.padStart(5, "0")}
         </Typography>
@@ -55,7 +56,12 @@ const PokemonCard: FC<Props> = ({ item, onClick }) => {
             />
           ))}
         </Box>
-        <Typography variant='h4' fontWeight='bold' color='white' sx={{ fontSize: 30 }}>
+        <Typography
+          variant='h4'
+          fontWeight='bold'
+          color='white'
+          sx={{ fontSize: 30, textShadow: "0 0 10px rgba(0,0,0,.3)" }}
+        >
           {formatPokemonName(item.name)}
         </Typography>
       </Stack>
@@ -69,9 +75,15 @@ const PokemonCard: FC<Props> = ({ item, onClick }) => {
           "/assets/empty.png"
         }
         alt={item.name}
-        width={200}
-        height={200}
+        // width={200}
+        height={1}
         loading='lazy'
+        sx={{
+          position: "absolute",
+          right: 0,
+          top: 0,
+          p: 2,
+        }}
       />
     </Card>
   );

@@ -110,8 +110,20 @@ const App: FC<Props> = () => {
   return (
     <Box bgcolor='background.default'>
       <Container maxWidth='lg'>
-        <Stack alignItems='center' gap={5} p={5} minHeight={"100vh"}>
-          <Typography variant='h1' color='text.primary' fontWeight={700}>
+        <Stack alignItems='center' gap={5} p={{ xs: 0, md: 5 }} minHeight={"100vh"}>
+          <Typography
+            variant='h1'
+            color='text.primary'
+            fontWeight={700}
+            sx={{
+              fontSize: { xs: 52, md: 96 },
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "baseline",
+              justifyContent: "center",
+              gap: 1,
+            }}
+          >
             Pokédex
             <Typography variant='caption' fontWeight={700} sx={{ fontSize: 20 }}>
               {" by dvlee"}
